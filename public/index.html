@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengumuman</title>
+    <link rel="stylesheet" href="/pengumuman/css/index.min.css" />
+    <link rel="icon" href="/pengumuman/img/favicon.ico" />
+<!--/body-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165289732-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165289732-1');
+</script>
+</head>
+
+<body id="body">
+    <div id="main" class="main">
+        <div id="index" class="index">
+            <div id="index-form" class="index-form">
+                <form class="index-form-content" id="index-form-form">
+                    <div class="index-form-content-logo">
+                        <img src="/pengumuman/img/ugm-putih.png" class="index-form-content-logo" alt="Logo">
+                    </div>
+                    <h1 class="index-form-content-title">HASIL SELEKSI</h1>
+                    <span class="index-form-content-subtitle">Masukkan Nomor Peserta dan Tanggal Lahir Sesuai dengan Kartu Ujian/Bukti Daftar.</span>
+                    <div class="index-form-content-form">
+                        <div class="index-form-content-form-field">
+                            <span class="index-form-content-form-field-caption">Nama</span>
+                            <input class="index-form-content-form-field-input" id="nama" type="text" placeholder="Masukkan nama lengkap">
+                        </div>
+                        <div class="index-form-content-form-field">
+                            <span class="index-form-content-form-field-caption">Nomor Peserta</span>
+                            <input class="index-form-content-form-field-input" id="no-peserta" type="tel" placeholder="10 digit tertera pada kartu peserta">
+                        </div>
+                        <div class="index-form-content-form-field">
+                            <span class="index-form-content-form-field-caption">Tanggal Lahir (sesuai dengan kartu ujian)</span>
+                            <div class="index-form-content-form-field-group">
+                                <input class="index-form-content-form-field-group-input" type="tel" placeholder="Tanggal" id="lahir-day">
+                                <span class="index-form-content-form-field-group-separator">/</span>
+                                <input class="index-form-content-form-field-group-input" type="tel" placeholder="Bulan" id="lahir-month">
+                                <span class="index-form-content-form-field-group-separator">/</span>
+                                <input class="index-form-content-form-field-group-input" type="tel" placeholder="Tahun" id="lahir-year">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-form-content-form-field">
+                        <span class="index-form-content-form-field-caption">Program Studi</span>
+                        <input class="index-form-content-form-field-input" id="prodi" type="text" placeholder="Masukkan program studi">
+                    </div>
+                    
+                    <span class="index-form-content-alert" id="alert"></span>
+                    <div class="index-form-content-footer">
+                        <input type="button" class="index-form-content-footer-submit" id="index-form-submit" value="LIHAT HASIL SELEKSI" onclick="sendData()">
+                        <!-- <a target="_blank" class="index-form-content-footer-pdf">SIMASTER ???</a> -->
+                    </div>
+                </form>
+                <div class="index-form-border"></div>
+            </div>
+        </div>
+    </div>
+    <div class="marquee-container">
+        <span class="marquee">-- Created by Fizual Studio --</span>
+    </div>
+
+    <script src="/pengumuman/js/pengumuman.js" async></script>
+</body>
+
+</html>
